@@ -1,6 +1,6 @@
 # Ranking de contribuição de repositorios do github
 
-## Get the ranking of a repository:
+### Get the ranking of a repository:
 
 `GET /ranking/:repo_owner/:repo/month/:month/:diff_type`
 
@@ -10,7 +10,9 @@
 | ------- | ------ | --------------------------------------------------------------------------------- |
 | authors | string | Github usernames separated with comma to be filtered and used as ranking of them. |
 
-##### Response
+##### Responses
+
+`Status: 204 NoContent`
 
 `Status: 200 OK`
 
@@ -52,6 +54,7 @@
 ##### Requirements:
 
 When the request does not have the `authors` parameter it should process all colaborators and save the result to a MySql database. And when the request have the parameter it should process only the data of them.
+If the repository don't have at least 3 contributors on the selected month return status 204 with a message.
 
 The ranking calculated for a repository by month and diff_type, wich can be the number of commits or number of changes.
 

@@ -1,16 +1,16 @@
-#Ranking de contribuição de repositorios do github
+# Ranking de contribuição de repositorios do github
 
-##Get the ranking of a repository:
+## Get the ranking of a repository:
 
 `GET /ranking/:repo_owner/:repo/month/:month/:diff_type`
 
-#####Parameters:
+##### Parameters:
 
 | Name    | Type   | Description                                                                       |
 | ------- | ------ | --------------------------------------------------------------------------------- |
 | authors | string | Github usernames separated with comma to be filtered and used as ranking of them. |
 
-#####Response
+##### Response
 
 `Status: 200 OK`
 
@@ -49,7 +49,7 @@
 ]
 ```
 
-#####Requirements:
+##### Requirements:
 
 When the request does not have the `authors` parameter it should process all colaborators and save the result to a MySql database. And when the request have the parameter it should process only the data of them.
 

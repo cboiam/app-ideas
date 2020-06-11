@@ -99,9 +99,9 @@
 #### Requirements:
 
 - To create and update a to do item the dueDate needs to be a future date.
-- The to do have a status wich can be ToDo, Expired and Done.
+- The to do have a status wich can be ToDo, Expired and Done and sub-items.
 - Create an api with at least 3 layers (api, business, data).
-- Use MySql as database.
+- Use MySql as database and the repository pattern to access it (https://medium.com/thecodemonks/cautions-applying-repository-and-unit-of-work-patterns-with-dependency-injection-in-domain-driven-52fbe05bf9a5).
 - Use dependency injection.
 - Use swagger documentation.
 - Create at least unit tests for the business layer.
